@@ -63,16 +63,16 @@ exports.config = {
     // WebdriverCSS: https://github.com/webdriverio/webdrivercss
     // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
     // Browserevent: https://github.com/webdriverio/browserevent
-    plugins: {
-        webdrivercss: {
-            screenshotRoot: 'screenshots-src',
-            failedComparisonsRoot: 'screenshots-fails',
-            misMatchTolerance: 0.05,
-            screenWidth: [320]
-        },
-        // webdriverrtc: {},
-        // browserevent: {}
-    },
+    // plugins: {
+    //     webdrivercss: {
+    //         screenshotRoot: 'screenshots-src',
+    //         failedComparisonsRoot: 'screenshots-fails',
+    //         misMatchTolerance: 0.05,
+    //         screenWidth: [320,480,640,1024]
+    //     },
+    //     // webdriverrtc: {},
+    //     // browserevent: {}
+    // },
     //
     // Framework you want to run your specs with.
     // The following are supported: mocha, jasmine and cucumber
