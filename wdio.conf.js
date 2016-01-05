@@ -52,7 +52,7 @@ exports.config = {
     baseUrl: 'http://localhost:4700',
     //
     // Default timeout for all waitForXXX commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 1000000,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as property. Make sure you have
@@ -61,16 +61,16 @@ exports.config = {
     // WebdriverCSS: https://github.com/webdriverio/webdrivercss
     // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
     // Browserevent: https://github.com/webdriverio/browserevent
-    // plugins: {
-    //     webdrivercss: {
-    //         screenshotRoot: 'screenshots-src',
-    //         failedComparisonsRoot: 'screenshots-fails',
-    //         misMatchTolerance: 0.05,
-    //         screenWidth: [320,480,640,1024]
-    //     },
-    //     // webdriverrtc: {},
-    //     // browserevent: {}
-    // },
+    plugins: {
+        webdrivercss: {
+            screenshotRoot: 'screenshots/reference',
+            failedComparisonsRoot: 'screenshots/fails',
+            misMatchTolerance: 0.05,
+            screenWidth: [1024]
+        },
+        // webdriverrtc: {},
+        // browserevent: {}
+    },
     //
     // Framework you want to run your specs with.
     // The following are supported: mocha, jasmine and cucumber
