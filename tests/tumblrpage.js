@@ -1,28 +1,18 @@
-// Example using Mocha
-it('should check the first page',function(done) {
-  client
-    .init()
-    .url('https://example.com')
-    // Make this name unique.
-    .webdrivercss('page1', [
-      {
-        name: 'test',
-        screenWidth: [320,480,640,1024]
-      }, {
-        name: 'test_two',
-        screenWidth: [444,666]
-      }
-    ])
-    .end()
-    .call(done);
-});
+var assert = require('assert');
 
-it('should check the second page',function(done) {
-  client
-    // ...
-    // Make this name unique.
-    .webdrivercss('page2', [
-      // ..
-    ])
-    // ...
-);
+//require('webdrivercss').init(browser);
+
+
+
+describe('my website should always look the same',function() {
+
+    it('header should look the same',function(done) {
+        browser
+            .url('https://github.com/webdriverio/webdrivercss')
+            .webdrivercss('header', {
+                name: 'header',
+                elem: '.header'
+            })
+            .call(done);
+    });
+});

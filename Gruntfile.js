@@ -21,6 +21,8 @@ module.exports = function(grunt) {
 	    }
 	})
 
+	grunt.registerTask('test', 'Run visual regression tests.', ['selenium_standalone:serverConfig:install', 'selenium_standalone:serverConfig:start', 'webdriver'	]);
+
 	grunt.loadNpmTasks('grunt-webdriver');
 	grunt.loadNpmTasks('grunt-selenium-standalone');
 };

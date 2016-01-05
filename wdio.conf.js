@@ -68,7 +68,7 @@ exports.config = {
             screenshotRoot: 'screenshots-src',
             failedComparisonsRoot: 'screenshots-fails',
             misMatchTolerance: 0.05,
-            screenWidth: [320,480,640,1024]
+            screenWidth: [320]
         },
         // webdriverrtc: {},
         // browserevent: {}
