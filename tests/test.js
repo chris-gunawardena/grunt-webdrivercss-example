@@ -1,18 +1,22 @@
 
-describe('my website should always look the same',function() {
+describe('Homepage',function() {
+
+    this.timeout(99999999);
+
     it('header should look the same',function(done) {
-
         browser
-            .url('https://m.sb.qa.sbetenv.com/')
-            .webdrivercss('mobweb', {
-                name: 'homepage',
-                elem: 'body'
+            .sync()
+            .url('http://stackoverflow.com/')
+            .webdrivercss('stackoverflow', {
+                name: 'header',
+                elem: '#header'
             })
-            .webdrivercss('mobweb', {
-                name: 'homepage',
-                elem: 'body'
+            .webdrivercss('stackoverflow', {
+                name: 'footer',
+                elem: '#footer'
             })
+            .sync()
             .call(done);
-
     });
+
 });

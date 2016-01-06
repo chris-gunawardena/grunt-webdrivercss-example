@@ -63,10 +63,11 @@ exports.config = {
     // Browserevent: https://github.com/webdriverio/browserevent
     plugins: {
         webdrivercss: {
-            screenshotRoot: 'screenshots/reference',
-            failedComparisonsRoot: 'screenshots/fails',
+            screenshotRoot: './screenshots/reference',
+            failedComparisonsRoot: './screenshots/fails',
             misMatchTolerance: 0.05,
-            screenWidth: [1024]
+            screenWidth: [1024],
+            api: 'http://localhost:9000/api/repositories/'
         },
         // webdriverrtc: {},
         // browserevent: {}
