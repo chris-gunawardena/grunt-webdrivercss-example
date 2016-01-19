@@ -5,17 +5,17 @@ describe('Homepage',function() {
 
     it('header should look the same',function(done) {
         browser
-            .sync()
-            .url('http://stackoverflow.com/')
-            .webdrivercss('stackoverflow', {
+            //.sync()
+            .url('https://github.com/chris-gunawardena/grunt-webdrivercss-example')
+            .webdrivercss('github', {
                 name: 'header',
-                elem: '#header'
+                elem: '.pagehead'
             })
-            .webdrivercss('stackoverflow', {
+            .webdrivercss('github', {
                 name: 'footer',
-                elem: '#footer'
+                elem: '.site-footer'
             })
-            .sync()
+            //.sync()
             .call(done);
     });
 
