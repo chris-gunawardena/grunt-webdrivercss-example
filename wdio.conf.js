@@ -33,6 +33,9 @@ exports.config = {
     // See https://medium.com/@jlchereau/how-to-configure-webdrivier-io-with-selenium-standalone-and-additional-browsers-9369d38bc4d1 for more information.
     // See http://docs.seleniumhq.org/download/ for available versions.
     //
+    // Add 'phantomjs.binary.path': require('path').join(__dirname, 'node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs.exe')
+    // to capabilities for browserName == 'phantomjs' on Windows.
+    //
     capabilities: [{
         browserName: 'chrome'
     }],
