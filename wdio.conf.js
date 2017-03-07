@@ -29,6 +29,13 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
+    // Browsers: chrome, firefox, internet explorer, MicrosoftEdge, opera, phantomjs, safari
+    // See https://medium.com/@jlchereau/how-to-configure-webdrivier-io-with-selenium-standalone-and-additional-browsers-9369d38bc4d1 for more information.
+    // See http://docs.seleniumhq.org/download/ for available versions.
+    //
+    // Add 'phantomjs.binary.path': require('path').join(__dirname, 'node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs.exe')
+    // to capabilities for browserName == 'phantomjs' on Windows.
+    //
     capabilities: [{
         browserName: 'chrome'
     }],
@@ -79,9 +86,9 @@ exports.config = {
     //
     // Make sure you have the node package for the specific framework installed before running
     // any tests. If not please install the following package:
-    // Mocha: `$ npm install mocha`
-    // Jasmine: `$ npm install jasmine`
-    // Cucumber: `$ npm install cucumber`
+    // Mocha: `$ npm install wdio-mocha-framework`
+    // Jasmine: `$ npm install wdio-jasmine-framework`
+    // Cucumber: `$ npm install wdio-cucumber-framework`
     framework: 'mocha',
     //
     // Test reporter for stdout.
