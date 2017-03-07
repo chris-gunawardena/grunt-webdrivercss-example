@@ -3,19 +3,43 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		webdriver: {
 			test: {
-				configFile: './wdio.conf.js'
+				configFile: 'wdio.conf.js'
 			}
 		},
 	    'selenium_standalone': {
 	        serverConfig: {
-	            seleniumVersion: '2.48.2',
+	            seleniumVersion: '3.2.0',
 	            seleniumDownloadURL: 'http://selenium-release.storage.googleapis.com',
 	            drivers: {
+                    // http://chromedriver.storage.googleapis.com/
 	                chrome: {
-	                  version: '2.20',
-	                  arch: process.arch,
-	                  baseURL: 'http://chromedriver.storage.googleapis.com'
-	                }
+	                  version: '2.27'
+	                },
+                    // https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+	                edge: {
+	                  version: '3.14393'
+	                },
+                    // https://github.com/mozilla/geckodriver/releases
+	                firefox: {
+	                  version: '0.14.0'
+	                },
+                    // https://selenium-release.storage.googleapis.com/
+                    ie: {
+                      version: '2.53.1',
+                      arch: 'ia32'
+                    },
+                    // https://github.com/operasoftware/operachromiumdriver/releases
+	                opera: {
+	                  version: '0.2.2'
+	                },
+                    // https://bitbucket.org/ariya/phantomjs/downloads/
+	                phantomjs: {
+	                  version: '2.1.1'
+	                },
+                    // https://selenium-release.storage.googleapis.com/
+                    safari: {
+                      version: '2.48'
+                    }
 	            }
 	        }
 	    }

@@ -29,6 +29,9 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
+    // Browsers: chrome, edge, firefox, ie, opera, phantomjs, safari
+    // See http://docs.seleniumhq.org/download/ for available versions.
+    //
     capabilities: [{
         browserName: 'chrome'
     }],
@@ -79,9 +82,9 @@ exports.config = {
     //
     // Make sure you have the node package for the specific framework installed before running
     // any tests. If not please install the following package:
-    // Mocha: `$ npm install mocha`
-    // Jasmine: `$ npm install jasmine`
-    // Cucumber: `$ npm install cucumber`
+    // Mocha: `$ npm install wdio-mocha-framework`
+    // Jasmine: `$ npm install wdio-jasmine-framework`
+    // Cucumber: `$ npm install wdio-cucumber-framework`
     framework: 'mocha',
     //
     // Test reporter for stdout.
