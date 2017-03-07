@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 	                },
                     // https://selenium-release.storage.googleapis.com/
                     ie: {
-                      version: '2.53.1',
+                      version: '3.0.0',
                       arch: 'ia32'
                     },
                     // https://github.com/operasoftware/operachromiumdriver/releases

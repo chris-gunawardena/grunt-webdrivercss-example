@@ -29,7 +29,8 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    // Browsers: chrome, edge, firefox, ie, opera, phantomjs, safari
+    // Browsers: chrome, edge, firefox, internet explorer, opera, phantomjs, safari
+    // See https://medium.com/@jlchereau/how-to-configure-webdrivier-io-with-selenium-standalone-and-additional-browsers-9369d38bc4d1 for more information.
     // See http://docs.seleniumhq.org/download/ for available versions.
     //
     capabilities: [{
