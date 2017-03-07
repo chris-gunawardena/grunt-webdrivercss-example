@@ -7,9 +7,11 @@
 3. Install Java 8.
 4. Install GraphicsMagick - see https://github.com/webdriverio/webdrivercss/blob/master/README.md#install:
 
+```
     Ubuntu:  sudo apt-get install graphicsmagick
     OSX:     brew install graphicsmagick
     Windows: http://www.graphicsmagick.org/download.html
+```
 
 5. Run `git clone https://github.com/chris-gunawardena/grunt-webdrivercss-example` to clone this project.
 6. Run `cd grunt-webdrivercss-example` to change current directory to the project root.
